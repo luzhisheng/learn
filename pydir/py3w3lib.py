@@ -36,6 +36,44 @@ def test_str(dirname):
     url = w3lib.html.get_base_url(file_content,baseurl='www.google.com',encoding='utf-8')
     print(url)
 
+    # 返回HTML元元素的http-equiv参数，并返回一个元组
+    http_equiv = w3lib.html.get_meta_refresh(file_content)
+    print(http_equiv)
+
+    # 删除注释
+    comments = w3lib.html.remove_comments(file_content)
+    print(comments)
+
+    # 仅删除HTML标签,which_ones和keep都是元组，有四种情况
+    remove_tag_str = w3lib.html.remove_tags(file_content)
+    print(remove_tag_str)
+
+    # 删除标签及其内容
+    remove_tag_content_str = w3lib.html.remove_tags_with_content(file_content,which_ones=('html',))
+    print('-------------')
+    print(remove_tag_content_str)
+
+    # 通过将实体转换为相应的unicode字符，从给定文本中删除实体
+    remove_entities = w3lib.html.replace_entities('&lt;')
+    print('&lt;')
+    print(remove_entities)
+
+    # which_ones是我们要删除的转义字符的元组。默认情况下移除了\n，\t，\r,replace_by是用于替换转义字符的字符串。
+    chars = w3lib.html.replace_escape_chars(file_content)
+    print(chars)
+
+    # 替换HTML标签, token='' 默认为空
+    replace_tag = w3lib.html.replace_tags(file_content)
+    print(replace_tag)
+
+    # 去除首尾空格
+    whitespace = w3lib.html.strip_html5_whitespace('\n  1111 \n')
+    print(whitespace)
+
+    # html实体转义，不是删除
+    markup = w3lib.html.unquote_markup('<h1>&lt;')
+    print(markup)
+
 
 if __name__ == '__main__':
     dirname = 'html_body_str.html'
