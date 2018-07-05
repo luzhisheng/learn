@@ -6,3 +6,6 @@ https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c
 #w3lib
 http://w3lib.readthedocs.io/en/latest/w3lib.html#module-w3lib.encoding
 https://blog.csdn.net/jianmoumou233/article/details/79891441
+
+#遍历移除项目中的所有 .pyc 文件
+https://segmentfault.com/q/1010000002179781
