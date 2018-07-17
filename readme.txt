@@ -19,16 +19,12 @@ http://xiaorui.cc/2016/07/24/%E5%B0%8F%E6%8E%A2python-thrift%E9%80%9A%E4%BF%A1%E
 #docker学习资料
     #Docker新手入门
     https://www.missshi.cn/api/view/blog/5a6327650a745f6335000002
-
     #Ubuntu15安装Docker
     https://blog.csdn.net/u011781521/article/details/55222935
-
     #sudo apt-get install E: 软件包 * 还没有可供安装的候选者
     https://blog.csdn.net/yishengzhiai005/article/details/38315719
-
     #docker实践（1） 在ubuntu15.10里面安装docker
     https://blog.csdn.net/ajax_zh/article/details/49521591
-
 
 #youtube-dl
 http://hant.ask.helplib.com/python/post_712767
