@@ -72,87 +72,62 @@ YoutubeDL类
     cachedir：文件系统中缓存文件的位置。 False以禁用文件系统缓存。
     noplaylist：如果有疑问，请下载单个视频而不是播放列表。
     age_limit：表示用户年龄的整数。 不推荐给定年龄段的不合适视频。
-    min_views：表示视频最小视图数的整数
-                       必须有，以免被跳过。
-                       没有查看计数信息的视频总是如此
-                       下载。没有限制。
-    max_views：表示最大视图计数的整数。
-                       比这更受欢迎的视频不是
-                       下载。
-                       没有查看计数信息的视频总是如此
-                       下载。没有限制。
-    download_archive：记录所有下载的文件的文件名。
-                       未下载文件中已存在的视频
-                       再次。
+    min_views：表示视频最小视图数的整数必须有，以免被跳过。没有查看计数信息的视频总是如此 下载。没有限制。
+    max_views：表示最大视图计数的整数。比这更受欢迎的视频不是下载。没有查看计数信息的视频总是如此下载。没有限制。
+    download_archive：记录所有下载的文件的文件名。未下载文件中已存在的视频再次。
     cookiefile：应从中读取和转储cookie的文件名。
     nocheckcertificate：不验证SSL证书
-    prefer_insecure：使用HTTP而不是HTTPS来检索信息。
-                       目前，仅YouTube支持此功能。
+    prefer_insecure：使用HTTP而不是HTTPS来检索信息。 目前，仅YouTube支持此功能。
     proxy：要使用的代理服务器的URL
-    geo_verification_proxy：用于IP地址验证的代理的URL
-                       在地理限制网站上。
-    socket_timeout：等待无响应主机的时间，以秒为单位
-    bidi_workaround：在没有双向文本的情况下解决有缺陷的终端
-                       支持，使用fridibi
+    geo_verification_proxy：用于IP地址验证的代理的URL在地理限制网站上。
+    socket_timeout：等待无响应主机的时间，以秒为单位支持，使用fridibi
     debug_printtraffic：打印发送和接收的HTTP流量
     include_ads：也下载广告
-    default_search：如果输入url无效，则前置此字符串。
-                       'auto'用于精心猜测
+    default_search：如果输入url无效，则前置此字符串。'auto'用于精心猜测
     encoding：使用此编码而不是系统指定的编码。
-    extract_flat：不解析URL，返回立即结果。
-                       传递'in_playlist'仅显示此行为
-                       播放列表项目。
-    postprocessors：字典列表，每个字典都有一个条目
-                       * key：后处理器的名称。看到
-                               youtube_dl / postprocessor / __ init__.py获取列表。
-                       以及任何进一步的关键字参数
-                       后处理器。
-    progress_hooks：下载时调用的函数列表
-                       进度，带有条目的字典
-                       * status：“下载”，“错误”或“已完成”之一。
-                                 首先检查并忽略未知值。
-
+    extract_flat：不解析URL，返回立即结果。传递'in_playlist'仅显示此行为播放列表项目。
+    
+    postprocessors：字典列表，每个字典都有一个条目 * key：后处理器的名称。
+                    看到youtube_dl / postprocessor / __ init__.py获取列表。以及任何进一步的关键字参数后处理器。
+    progress_hooks：下载时调用的函数列表进度，带有条目的字典
+                       * status：“下载”，“错误”或“已完成”之一。首先检查并忽略未知值。
                        如果状态是“下载”或“已完成”之一，则
                        以下属性也可能存在：
                        * filename：最终文件名（始终存在）
                        * tmpfilename：我们当前正在写入的文件名
                        * downloaded_bytes：磁盘上的字节数
                        * total_bytes：整个文件的大小，如果未知，则为None
-                       * total_bytes_estimate：猜测最终的文件大小，
-                                               没有，如果不可用
+                       * total_bytes_estimate：猜测最终的文件大小，没有，如果不可用
                        *逝去：自下载开始以来的秒数。
                        * eta：以秒为单位的估计时间，如果未知则为无
-                       * speed：下载速度，以字节/秒为单位，如果是，则为None
-                                未知
-                       * fragment_index：当前的计数器
-                                         下载了视频片段。
-                       * fragment_count：片段数量（=个体
-                                         将合并的文件）
-
-                       保证进度挂钩至少被调用一次
-                       （如果下载成功，则状态为“已完成”）。
-    merge_output_format：合并格式时使用的扩展名。
-    fixup：自动更正文件的已知错误。
-                       之一：
+                       * speed：下载速度，以字节/秒为单位，如果是，则为None未知
+                       * fragment_index：当前的计数器下载了视频片段。
+                       * fragment_count：片段数量（=个体将合并的文件）
+                        保证进度挂钩至少被调用一次 （如果下载成功，则状态为“已完成”）。
+    
+    merge_output_format：合并格式时使用的扩展名。
+    fixup：自动更正文件的已知错误。 之一：
                         - “从不”：什么都不做
                         - “警告”：只发出警告
-                        - “detect_or_warn”：检查我们是否可以做任何事情
-                                           关于它，警告否则（默认）
+                        - “detect_or_warn”：检查我们是否可以做任何事情关于它，警告否则（默认）
     source_address：要绑定的客户端IP地址。
-    call_home：Boolean，如果允许我们联系，则为true
-                       youtube-dl服务器用于调试。
-    sleep_interval：每次下载前睡眠的秒数
-                    单独使用或随机化范围的下限
-                    每次下载前睡觉（最小可能的数量
-                    与...一起使用的几秒钟
-                    max_sleep_interval。
-    max_sleep_interval：每个之前随机睡眠范围的上限 下载（最大可能的睡眠秒数）。
-                        只能与sleep_interval一起使用。 实际睡眠时间将是范围内的随机浮动[sleep_interval; max_sleep_interval。
-    listformats：打印可用视频格式的概述并退出。
+    
+    call_home：Boolean，如果允许我们联系，则为true youtube-dl服务器用于调试。
+    
+    sleep_interval：每次下载前睡眠的秒数单独使用或随机化范围的下限每次下载前睡觉（最小可能的数量与...一起使用的几秒钟max_sleep_interval。
+    
+    max_sleep_interval：每个之前随机睡眠范围的上限 下载（最大可能的睡眠秒数）。
+                        只能与sleep_interval一起使用。
+                        实际睡眠时间将是范围内的随机浮动[sleep_interval; max_sleep_interval。
+    
+    listformats：打印可用视频格式的概述并退出。
 
     list_thumbnails：打印所有缩略图的表并退出。
 
-    match_filter：使用info_dict调用的函数 每个视频。如果它返回一条消息，则忽略该视频。如果它返回None，则下载视频。utils.py中的match_filter_func就是一个例子。
+    match_filter：使用info_dict调用的函数 每个视频。
+                  如果它返回一条消息，则忽略该视频。
+                  如果它返回None，则下载视频。
+                  utils.py中的match_filter_func就是一个例子。
 
     no_color：不在输出中发出颜色代码。
 
@@ -182,5 +157,6 @@ YoutubeDL类
     Youtube提取器使用以下选项：
     
     youtube_include_dash_manifest：如果为True（默认），则DASH显示并相关 数据将由提取器下载和处理。 如果不这样做，可以通过禁用来减少网络I/O.关心DASH。
+
 </body>
 </html>
