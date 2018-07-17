@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>youtubedl中文文档</title>
+</head>
+<body>
+YoutubeDL类
+
+    YoutubeDL对象负责下载
+    实际的视频文件，如果用户请求，则将其写入磁盘它，在其他一些任务中。在大多数情况下，应该有一个程序。
+    因为，鉴于视频网址，下载程序不知道如何操作提取所有需要的信息，InfoExtractors所做的任务，它必须将URL传递给其中一个。
+
+    为此，YoutubeDL对象有一个允许的方法InfoExtractors将在给定订单中注册。
+    当它通过一个URL，YoutubeDL对象将它处理到第一个InfoExtractor它发现报告能够处理它。
+    InfoExtractor提取关于URL引用的视频或视频的所有信息，以及YoutubeDL可能使用文件处理提取的信息下载视频下载器。
+
+    YoutubeDL对象接受大量参数。为了不饱和带参数的对象构造函数，它接收一个字典相反的选择。
+    这些选项可通过参数获得InfoExtractors要使用的属性。
+    YoutubeDL也是将自己注册为负责InfoExtractors的下载程序添加到它，所以这是一个“相互注册”。
+
+    可用选项：
+    username：用于身份验证的用户名。
+    password：用于身份验证的密码。
+    videopassword：访问视频的密码。
+    ap_mso：Adobe Pass多系统操作员标识符。
+    ap_username：多系统运营商帐户用户名。
+    ap_password：多系统操作员帐户密码。
+    usenetrc：使用netrc进行身份验证。
+    verbose：将其他信息打印到stdout。
+    quiet：不要向stdout打印消息。
+    no_warnings：不要打印任何警告。
+    forceurl：强制打印最终URL。
+    forcetitle：强制打印标题。
+    forceid：强制打印ID。
+    forcethumbnail：强制打印缩略图URL。
+    forcedescription：强制打印描述。
+    forcefilename：强制打印最终文件名。
+    forceduration：强制打印持续时间。
+    forcejson：强制打印info_dict为JSON。
+    dump_single_json：强制打印整个播放列表的info_dict （或视频）作为单个JSON行。
+    simulate：不要下载视频文件。
+    format：视频格式代码。有关更多信息，请参阅options.py。
+    outtmpl：输出名称的模板。
+    restrictfilenames：不允许文件名中包含“＆”和空格
+    ignoreerrors：不要停止下载错误。
+    force_generic_extractor：强制下载器使用通用提取器
+    nooverwrites：防止覆盖文件。
+    playliststart：从中开始的播放列表项。
+    playlistend：结束播放列表项目。
+    playlist_items：要下载的播放列表的特定索引。
+    playlistreverse：以相反的顺序下载播放列表项。
+    playlistrandom：以随机顺序下载播放列表项。
+    matchtitle：仅下载匹配的标题。
+    rejecttitle：拒绝匹配标题的下载。
+    logger：将消息记录到logging.Logger实例。
+    logtostderr：将消息记录到stderr而不是stdout。
+    writedescription：将视频描述写入.description文件
+    writeinfojson：将视频描述写入.info.json文件
+    writeannotations：将视频注释写入.annotations.xml文件
+    writnexumbnail：将缩略图图像写入文件
+    write_all_thumbnails：将所有缩略图格式写入文件
+    writesubtitles：将视频字幕写入文件
+    writeautomaticsub：将自动生成的字幕写入文件
+    allsubtitles：下载视频的所有字幕 （需要writeubtitles或writeautomaticsub）
+    listsubtitles：列出视频的所有可用字幕
+    subtitlesformat：字幕的格式代码
+    subtitleslangs：要下载的字幕语言列表
+    keepvideo：后处理后保留视频文件
+    daterange：DateRange对象，仅当upload_date在范围内时才下载。
+    skip_download：跳过视频文件的实际下载
+    cachedir：文件系统中缓存文件的位置。 False以禁用文件系统缓存。
+    noplaylist：如果有疑问，请下载单个视频而不是播放列表。
+    age_limit：表示用户年龄的整数。 不推荐给定年龄段的不合适视频。
+    min_views：表示视频最小视图数的整数
+                       必须有，以免被跳过。
+                       没有查看计数信息的视频总是如此
+                       下载。没有限制。
+    max_views：表示最大视图计数的整数。
+                       比这更受欢迎的视频不是
+                       下载。
+                       没有查看计数信息的视频总是如此
+                       下载。没有限制。
+    download_archive：记录所有下载的文件的文件名。
+                       未下载文件中已存在的视频
+                       再次。
+    cookiefile：应从中读取和转储cookie的文件名。
+    nocheckcertificate：不验证SSL证书
+    prefer_insecure：使用HTTP而不是HTTPS来检索信息。
+                       目前，仅YouTube支持此功能。
+    proxy：要使用的代理服务器的URL
+    geo_verification_proxy：用于IP地址验证的代理的URL
+                       在地理限制网站上。
+    socket_timeout：等待无响应主机的时间，以秒为单位
+    bidi_workaround：在没有双向文本的情况下解决有缺陷的终端
+                       支持，使用fridibi
+    debug_printtraffic：打印发送和接收的HTTP流量
+    include_ads：也下载广告
+    default_search：如果输入url无效，则前置此字符串。
+                       'auto'用于精心猜测
+    encoding：使用此编码而不是系统指定的编码。
+    extract_flat：不解析URL，返回立即结果。
+                       传递'in_playlist'仅显示此行为
+                       播放列表项目。
+    postprocessors：字典列表，每个字典都有一个条目
+                       * key：后处理器的名称。看到
+                               youtube_dl / postprocessor / __ init__.py获取列表。
+                       以及任何进一步的关键字参数
+                       后处理器。
+    progress_hooks：下载时调用的函数列表
+                       进度，带有条目的字典
+                       * status：“下载”，“错误”或“已完成”之一。
+                                 首先检查并忽略未知值。
+
+                       如果状态是“下载”或“已完成”之一，则
+                       以下属性也可能存在：
+                       * filename：最终文件名（始终存在）
+                       * tmpfilename：我们当前正在写入的文件名
+                       * downloaded_bytes：磁盘上的字节数
+                       * total_bytes：整个文件的大小，如果未知，则为None
+                       * total_bytes_estimate：猜测最终的文件大小，
+                                               没有，如果不可用
+                       *逝去：自下载开始以来的秒数。
+                       * eta：以秒为单位的估计时间，如果未知则为无
+                       * speed：下载速度，以字节/秒为单位，如果是，则为None
+                                未知
+                       * fragment_index：当前的计数器
+                                         下载了视频片段。
+                       * fragment_count：片段数量（=个体
+                                         将合并的文件）
+
+                       保证进度挂钩至少被调用一次
+                       （如果下载成功，则状态为“已完成”）。
+    merge_output_format：合并格式时使用的扩展名。
+    fixup：自动更正文件的已知错误。
+                       之一：
+                        - “从不”：什么都不做
+                        - “警告”：只发出警告
+                        - “detect_or_warn”：检查我们是否可以做任何事情
+                                           关于它，警告否则（默认）
+    source_address：要绑定的客户端IP地址。
+    call_home：Boolean，如果允许我们联系，则为true
+                       youtube-dl服务器用于调试。
+    sleep_interval：每次下载前睡眠的秒数
+                    单独使用或随机化范围的下限
+                    每次下载前睡觉（最小可能的数量
+                    与...一起使用的几秒钟
+                    max_sleep_interval。
+    max_sleep_interval：每个之前随机睡眠范围的上限 下载（最大可能的睡眠秒数）。
+                        只能与sleep_interval一起使用。 实际睡眠时间将是范围内的随机浮动[sleep_interval; max_sleep_interval。
+    listformats：打印可用视频格式的概述并退出。
+
+    list_thumbnails：打印所有缩略图的表并退出。
+
+    match_filter：使用info_dict调用的函数 每个视频。如果它返回一条消息，则忽略该视频。如果它返回None，则下载视频。utils.py中的match_filter_func就是一个例子。
+
+    no_color：不在输出中发出颜色代码。
+
+    geo_bypass：通过伪造X-Forwarded-For绕过地理限制 HTTP标头
+
+    geo_bypass_country：将用于的双字母ISO 3166-2国家/地区代码 明确的地理限制绕过伪造 X-Forwarded-For HTTP标头
+
+    geo_bypass_ip_block：将以类似方式使用的CIDR表示法中的IP范围 geo_bypass_country
+
+
+    以下选项确定选择的下载程序：
+    external_downloader：要调用的外部下载程序的可执行文件。 没有或未设置标准（内置）下载器。
+
+    hls_prefer_native：使用本机HLS下载程序而不是ffmpeg/avconv 如果为True，否则使用ffmpeg/avconv，否则为False 如果没有，请使用提取器建议的下载器。
+
+    YoutubeDL本身不使用以下参数，它们由以下参数使用下载程序（请参阅youtube_dl / downloader / common.py）：
+    nopart，updatetime，buffersize，ratelimit，min_filesize，max_filesize，test，
+    noresizebuffer，retries，continul，noprogress，consoletitle，
+    xattr_set_filesize，external_downloader_args，hls_use_mpegts，
+    http_chunk_size。
+
+    后处理器使用以下选项：
+    prefer_ffmpeg：如果为False，如果两者都可用，则使用avconv而不是ffmpeg， 否则更喜欢ffmpeg。
+    
+    postprocessor_args：其他命令行参数的列表 后处理器。
+    
+    Youtube提取器使用以下选项：
+    
+    youtube_include_dash_manifest：如果为True（默认），则DASH显示并相关 数据将由提取器下载和处理。 如果不这样做，可以通过禁用来减少网络I/O.关心DASH。
+</body>
+</html>

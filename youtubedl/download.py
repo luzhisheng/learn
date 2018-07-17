@@ -47,7 +47,13 @@ class MyMongodb(object):
 
 class MyLogger(object):
     def debug(self, msg):
-        print("---" * 20 + msg)
+        pass
+
+    def warning(self, msg):
+        pass
+
+    def error(self, msg):
+        print(msg)
 
 
 class GetItem(object):
@@ -67,17 +73,17 @@ class GetItem(object):
             'outtmpl': '%(id)s%(ext)s',
             # 强制打印时间
             'forceduration': 1,
+            # 日志打印
             'logger': MyLogger()
         }
 
-        # with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-        #     result = ydl.extract_info(youtube_url,download=False)
-
-        # with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-        #     result = ydl.download([youtube_url])
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            # extract_info 提取信息
+            result = ydl.extract_info(youtube_url, download=False)
 
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            result = ydl.process_info(dict(ydl_opts))
+            # 下载给定的URL列表
+            result = ydl.download([youtube_url])
 
         print(result)
 
