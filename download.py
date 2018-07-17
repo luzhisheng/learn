@@ -5,11 +5,11 @@ import pymongo
 
 
 DEV_SETTING = {
-    'host': '47.88.244.133',
+    'host': 'xxxx',
     'port': 27017,
-    'username': 'db_user_snippetnews',
-    'pwd': 'dM2seGslBZlA5H4C',
-    'db': 'dev_snippetnews',
+    'username': 'xxx',
+    'pwd': 'xxx',
+    'db': 'xxx',
     'collection': '',
     'source': '',
     'stats': '',
