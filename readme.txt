@@ -32,3 +32,8 @@ https://github.com/rg3/youtube-dl/blob/3e4cedf9e8cd3157df2457df7274d0c842421945/
 https://github.com/rg3/youtube-dl/blob/master/README.md#output-template
 https://extremegtr.github.io/2017/10/06/Use_youtube-dl_download-Youtube-video/
 https://zshmobi.com/2017/08/11/download-youtube-video-with-youtube-dl/
+
+#Fiddler突然不能抓手机端请求的原因之一
+https://zxning.github.io/2016/03/18/Fiddler-NotGetRequestFromPhone/
+
+#domian+dont_filter=True
