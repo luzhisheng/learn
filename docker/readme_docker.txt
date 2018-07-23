@@ -15,3 +15,33 @@ sudo wget -qO- https://get/docker.com | sh
 wget命令用来从指定的URL下载文件
 -q：不显示指令执行过程；
 O-:直接标准输出，不输出文件
+
+启动docker -p 映射 docker80端口映射到本地8080端口 -d 守护进程
+sudo docker run -p 8080:80 -d nginx
+
+拷贝文件到容器中,页面显示index.html
+vim index.html
+sudo docker cp index.html 6ad3b7eaf18d://usr/share/nginx/html
+
+查看正在运行的doc容器
+sudo docker ps
+
+停止docker容器
+sudo docker stop id
+
+docker在容器内的改动都是缺省的,暂时的,需要创建本地镜像。
+sudo docker commit -m 'fun' 8e23fe5168ca nginx-fun
+
+删除镜像
+sudo docker rmi id
+
+查看所有doc容器
+sudo docker ps -a
+
+删除容器
+sudo docker rm id
+
+启动一个镜像
+sudo docker run -p 8080:80 -d nginx
+
+
