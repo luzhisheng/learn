@@ -35,6 +35,7 @@ https://zshmobi.com/2017/08/11/download-youtube-video-with-youtube-dl/
 
 #Fiddler突然不能抓手机端请求的原因之一
 https://zxning.github.io/2016/03/18/Fiddler-NotGetRequestFromPhone/
+http://www.yujzw.com/csqw/fiddler_windows10.html
 
 #domian+dont_filter=True
 
