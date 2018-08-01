@@ -16,7 +16,10 @@ wget命令用来从指定的URL下载文件
 -q：不显示指令执行过程；
 O-:直接标准输出，不输出文件
 
-启动docker -p 映射 docker80端口映射到本地8080端口 -d 守护进程
+启动docker
+-p 映射
+docker80端口映射到本地8080端口
+-d 守护进程
 sudo docker run -p 8080:80 -d nginx
 
 拷贝文件到容器中,页面显示index.html
@@ -30,6 +33,7 @@ sudo docker ps
 sudo docker stop id
 
 docker在容器内的改动都是缺省的,暂时的,需要创建本地镜像。
+commit 保存改动
 sudo docker commit -m 'fun' 8e23fe5168ca nginx-fun
 
 删除镜像
@@ -43,5 +47,30 @@ sudo docker rm id
 
 启动一个镜像
 sudo docker run -p 8080:80 -d nginx
+
+编辑文件,创建镜像
+FROM alpine:latest #基础镜像,类似于python对象继承object
+MAINTAINER ayf #共享的时候告诉别人,这是我写的
+CMD echo 'hello docker' #打印的信息
+
+# 创建文件
+mkdir docker
+cd docker
+touch Dorkerfile
+
+# vim
+FROM alpine:latest #基础镜像,类似于python对象继承object
+MAINTAINER ayf #共享的时候告诉别人,这是我写的
+CMD echo 'hello docker' #打印的信息
+
+# 构建
+-t 标签名hello_docker
+. 路径
+docker build -t hello_docker .
+
+#生成docker images
+sudo docker images
+sudo dcoker
+
 
 
