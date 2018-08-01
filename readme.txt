@@ -38,3 +38,10 @@ https://zxning.github.io/2016/03/18/Fiddler-NotGetRequestFromPhone/
 http://www.yujzw.com/csqw/fiddler_windows10.html
 
 #domian+dont_filter=True
+
+#python mock基本使用
+https://www.cnblogs.com/fnng/p/5648247.html
+
+#去除字符串中空格
+import re
+re.sub('\n\s*','',text)
