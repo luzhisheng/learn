@@ -3,6 +3,7 @@ import w3lib.encoding
 import w3lib.html
 import w3lib.http
 import w3lib.url
+import re
 
 
 def test_str(dirname):
@@ -110,7 +111,9 @@ def test_str(dirname):
     sort_url = w3lib.url.canonicalize_url('http://www.example.com/do?c=3&b=5&b=2&a=50')
     print(sort_url)
 
-
+    pattern = '<div class="text">[\s\S.]*</div>[\s\S.]*?</center>'
+    all_content = 'htmln内容'
+    re.sub(pattern, '', all_content)
 
 
 if __name__ == '__main__':

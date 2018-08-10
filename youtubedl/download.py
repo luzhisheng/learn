@@ -1,11 +1,15 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from os import rename
 import youtube_dl
 import time
 import pymongo
+from youtube_dl import utils
 
 
 DEV_SETTING = {
-    'host': 'xxxx',
+    'host': '47.88.244.133',
     'port': 27017,
     'username': 'xxx',
     'pwd': 'xxx',
@@ -45,47 +49,45 @@ class MyMongodb(object):
             return cls.db_dic.get(kw.get('username'))
 
 
-class MyLogger(object):
-    def debug(self, msg):
-        pass
-
-    def warning(self, msg):
-        pass
-
-    def error(self, msg):
-        print(msg)
-
-
 class GetItem(object):
+    def __init__(self):
+        self.status = ''
 
-    def rename_hook(self,d):
+    def rename_hook(self, d):
+        # print(d)
+        # print(time.time())
+        # print("*"*50)
         # 重命名下载的视频名称的钩子
+        # if d['total_bytes'] > 10:
+        #     return
+
         if d['status'] == 'finished':
-            file_name = 'video/{}.mp4'.format(int(time.time()))
+            print(d['filename'])
+            file_name = 'video/{}.mp4'.format('http-360p-282956134-worst')
             rename(d['filename'], file_name)
-            print('下载完成{}'.format(file_name))
+            self.status = d
 
     def download(self,youtube_url):
         # 定义某些下载参数
         ydl_opts = {
+            'format': 'worst',
             'progress_hooks': [self.rename_hook],
             # 格式化下载后的文件名，避免默认文件名太长无法保存
             'outtmpl': '%(id)s%(ext)s',
-            # 强制打印时间
-            'forceduration': 1,
-            # 日志打印
-            'logger': MyLogger()
         }
 
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            # extract_info 提取信息
-            result = ydl.extract_info(youtube_url, download=False)
+        # extract_info 提取信息
+        # with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        #     result = ydl.extract_info(youtube_url, download=False)
 
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             # 下载给定的URL列表
-            result = ydl.download([youtube_url])
+            ydl.download([youtube_url])
 
-        print(result)
+        # 打印视频长度
+        # print('*****')
+        # print(result)
+        # print(utils.formatSeconds(result['duration']))
 
 
 class ValueUrl(object):
@@ -104,5 +106,11 @@ class ValueUrl(object):
 
 
 if __name__ == '__main__':
-    obj = ValueUrl()
-    obj.get_url(source='Dogumentary TV')
+    # obj = ValueUrl()
+    # obj.get_url(source='Dogumentary TV')
+    item = GetItem()
+    item.download(youtube_url='https://images-cdn.9gag.com/photo/a3Kg675_460sv.mp4')
+    # print(item.status)
+    # print('*'*300)
+    # item.download(youtube_url='https://www.youtube.com/watch?v=fc_MI3MbLPY')
+    # print(item.status)

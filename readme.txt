@@ -25,6 +25,8 @@ http://xiaorui.cc/2016/07/24/%E5%B0%8F%E6%8E%A2python-thrift%E9%80%9A%E4%BF%A1%E
     https://blog.csdn.net/yishengzhiai005/article/details/38315719
     #docker实践（1） 在ubuntu15.10里面安装docker
     https://blog.csdn.net/ajax_zh/article/details/49521591
+    #Docker —— 从入门到实践
+    https://yeasy.gitbooks.io/docker_practice/introduction/
 
 #youtube-dl
 http://hant.ask.helplib.com/python/post_712767
@@ -32,6 +34,7 @@ https://github.com/rg3/youtube-dl/blob/3e4cedf9e8cd3157df2457df7274d0c842421945/
 https://github.com/rg3/youtube-dl/blob/master/README.md#output-template
 https://extremegtr.github.io/2017/10/06/Use_youtube-dl_download-Youtube-video/
 https://zshmobi.com/2017/08/11/download-youtube-video-with-youtube-dl/
+https://blog.csdn.net/lwgkzl/article/details/77836207
 
 #Fiddler突然不能抓手机端请求的原因之一
 https://zxning.github.io/2016/03/18/Fiddler-NotGetRequestFromPhone/
