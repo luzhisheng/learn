@@ -40,7 +40,9 @@ https://blog.csdn.net/lwgkzl/article/details/77836207
 https://zxning.github.io/2016/03/18/Fiddler-NotGetRequestFromPhone/
 http://www.yujzw.com/csqw/fiddler_windows10.html
 
+#scrapy
 #domian+dont_filter=True
+#https://www.cnblogs.com/3wtoucan/p/6008693.html
 
 #python mock基本使用
 https://www.cnblogs.com/fnng/p/5648247.html
