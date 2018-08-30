@@ -50,3 +50,6 @@ https://www.cnblogs.com/fnng/p/5648247.html
 #去除字符串中空格
 import re
 re.sub('\n\s*','',text)
+
+# Google Analytics（分析）Cookie 在网站上的用法
+https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage#gajs

@@ -16,12 +16,12 @@ def download(url):
     }
 
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-        #result = ydl.extract_info(url, download=False)
-        ydl.download([url])
+        result = ydl.extract_info(url, download=False)
+        # ydl.download([url])
 
-    #print(json.dumps(result))
+    print(json.dumps(result))
 
 
 if __name__ == '__main__':
-    download('https://www.instagram.com/p/Blcss5Phww3/')
+    download('https://vimeo.com/246917979')
     # download('https://clips.twitch.tv/ResoluteStrangeTapirNerfBlueBlaster')
