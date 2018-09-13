@@ -53,3 +53,6 @@ re.sub('\n\s*','',text)
 
 # Google Analytics（分析）Cookie 在网站上的用法
 https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage#gajs
+
+#爬虫css选择器
+https://www.jianshu.com/p/e605930e8774
