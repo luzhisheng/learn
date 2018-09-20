@@ -56,3 +56,6 @@ https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-
 
 #爬虫css选择器
 https://www.jianshu.com/p/e605930e8774
+
+# ubuntu系统下安装filezilla(FTP工具)，客户端
+https://blog.csdn.net/stubbornness1219/article/details/50909760
