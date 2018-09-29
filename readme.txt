@@ -59,3 +59,6 @@ https://www.jianshu.com/p/e605930e8774
 
 # ubuntu系统下安装filezilla(FTP工具)，客户端
 https://blog.csdn.net/stubbornness1219/article/details/50909760
+
+# 使用 xpath 定位包含指定文本内容的标签
+https://blog.csdn.net/HeatDeath/article/details/72236155
