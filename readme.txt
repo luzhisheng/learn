@@ -62,3 +62,24 @@ https://blog.csdn.net/stubbornness1219/article/details/50909760
 
 # 使用 xpath 定位包含指定文本内容的标签
 https://blog.csdn.net/HeatDeath/article/details/72236155
+
+# 撸羊毛
+http://www.work28.com/category-6.html
+https://www.ctrlqq.com/huafei
+http://m.92huodong.cn/news/?list_12.html
+http://www.qiangqiana.com/sort/5
+http://www.52hdb.com/news/?list_58.html
+http://www.huafei8.net/
+http://www.hackhw.com/qita/huafei/
+http://www.8bb.com/shenghuo/wangzhuan/
+https://www.zrfan.com/tag/%E8%AF%9D%E8%B4%B9%E5%85%85%E5%80%BC%E6%B4%BB%E5%8A%A8/
+http://www.xiaozuan8.com/tags-10.html
+http://www.haoyangmao.cc/
+http://www.hym68.com/
+https://www.weiqingbao.cc
+https://just998.com/xianbao/top/12hour
+http://www.qiangqiang5.com/forum.php?mod=forumdisplay&fid=95&filter=typeid&typeid=250
+http://www.xianbao5.com/
+https://www.work28.com/
+http://www.52xianbao.com/
+https://fxzhan.com/
