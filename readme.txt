@@ -44,17 +44,17 @@ http://www.yujzw.com/csqw/fiddler_windows10.html
 #domian+dont_filter=True
 #https://www.cnblogs.com/3wtoucan/p/6008693.html
 
-#python mock基本使用
+# python mock基本使用
 https://www.cnblogs.com/fnng/p/5648247.html
 
-#去除字符串中空格
+# 去除字符串中空格
 import re
 re.sub('\n\s*',' ',text)
 
 # Google Analytics（分析）Cookie 在网站上的用法
 https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage#gajs
 
-#爬虫css选择器
+# 爬虫css选择器
 https://www.jianshu.com/p/e605930e8774
 
 # ubuntu系统下安装filezilla(FTP工具)，客户端
