@@ -83,3 +83,7 @@ http://www.xianbao5.com/
 https://www.work28.com/
 http://www.52xianbao.com/
 https://fxzhan.com/
+
+# navicat破解
+https://blog.csdn.net/superit401/article/details/78110079
+https://blog.csdn.net/j_anson/article/details/52679726
