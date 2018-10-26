@@ -95,3 +95,6 @@ http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html
 
 # simplejson处理不严谨JSON
 https://blog.csdn.net/zhaokuo719/article/details/17164055
+
+# mongo查询语句
+db.getCollection('news').find({content_type:'only_video',url:/^.*youtube.*$/,source:'Visual Spot',mon_status:1,addtime:{$gt:1540396800,$lt:1540483200}}).count()
