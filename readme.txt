@@ -101,3 +101,6 @@ db.getCollection('news').find({content_type:'only_video',url:/^.*youtube.*$/,sou
 
 # youtube数据api
 https://developers.google.com/youtube/v3/docs/search/list
+
+# 正则匹配 xxx-xxxx-xxxx
+pattern = re.compile(r'.*/\d+/([^-]+?-)+?[^-]{1,30}$')
