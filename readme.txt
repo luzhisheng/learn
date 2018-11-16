@@ -106,3 +106,6 @@ https://developers.google.com/youtube/v3/docs/search/list
 pattern = re.compile(r'.*/\d+/([^-]+?-)+?[^-]{1,30}$')
 http://www.runoob.com/python/python-reg-expressions.html
 https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386832260566c26442c671fa489ebc6fe85badda25cd000
+
+# Ubuntu文件管理器卡死无法打开
+https://abelsu7.top/2018/02/05/ubuntu-nautilus-no-response/
