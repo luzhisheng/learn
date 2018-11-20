@@ -109,3 +109,6 @@ https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a
 
 # Ubuntu文件管理器卡死无法打开
 https://abelsu7.top/2018/02/05/ubuntu-nautilus-no-response/
+
+# Ubuntu下idea/pycharm/clion等工具自动格式化快捷键设置
+https://blog.csdn.net/ShabiDouf/article/details/70231401
