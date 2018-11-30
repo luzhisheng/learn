@@ -115,3 +115,6 @@ https://blog.csdn.net/ShabiDouf/article/details/70231401
 
 # ubuntu下添加硬盘，分区以及自动挂载
 https://www.jianshu.com/p/ec5579ef15a6
+
+# jquery 文档
+http://jquery.cuishifeng.cn/index.html
