@@ -118,3 +118,8 @@ https://www.jianshu.com/p/ec5579ef15a6
 
 # jquery 文档
 http://jquery.cuishifeng.cn/index.html
+
+# Selenniums谷歌插件操作chrome浏览器
+1.Selenniums谷歌插件：http://chromedriver.storage.googleapis.com/index.html
+2.Selenniums官方文档：http://selenium-python.readthedocs.io/index.html
+3.Ubuntu16.04 Selenium+python 环境搭建 Chromedriver安装https://www.cnblogs.com/titicia/p/6036572.html
