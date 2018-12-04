@@ -123,3 +123,6 @@ http://jquery.cuishifeng.cn/index.html
 1.Selenniums谷歌插件：http://chromedriver.storage.googleapis.com/index.html
 2.Selenniums官方文档：http://selenium-python.readthedocs.io/index.html
 3.Ubuntu16.04 Selenium+python 环境搭建 Chromedriver安装https://www.cnblogs.com/titicia/p/6036572.html
+
+# 解决json.loads()返回unicode
+https://blog.csdn.net/czy_1125/article/details/79220792
