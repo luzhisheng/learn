@@ -126,3 +126,6 @@ http://jquery.cuishifeng.cn/index.html
 
 # 解决json.loads()返回unicode
 https://blog.csdn.net/czy_1125/article/details/79220792
+
+# 如何自动生成和安装requirements.txt依赖
+https://www.cnblogs.com/zelos/p/7439599.html
