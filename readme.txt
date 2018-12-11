@@ -129,3 +129,6 @@ https://blog.csdn.net/czy_1125/article/details/79220792
 
 # 如何自动生成和安装requirements.txt依赖
 https://www.cnblogs.com/zelos/p/7439599.html
+
+# dateutil - 对datetime的强大扩展
+https://dateutil.readthedocs.io/en/stable/index.html
