@@ -135,3 +135,7 @@ https://www.cnblogs.com/zelos/p/7439599.html
 
 # dateutil - 对datetime的强大扩展
 https://dateutil.readthedocs.io/en/stable/index.html
+
+# python执行js
+https://www.jianshu.com/p/c534d6eb881a
+https://pypi.org/project/PyV8/
