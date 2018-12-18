@@ -139,3 +139,6 @@ https://dateutil.readthedocs.io/en/stable/index.html
 # python执行js
 https://www.jianshu.com/p/c534d6eb881a
 https://pypi.org/project/PyV8/
+
+# Python - 为什么time.sleep导致内存泄漏？
+https://stackoverrun.com/cn/q/9613388
