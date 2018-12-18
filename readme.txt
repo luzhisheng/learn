@@ -142,3 +142,6 @@ https://pypi.org/project/PyV8/
 
 # Python - 为什么time.sleep导致内存泄漏？
 https://stackoverrun.com/cn/q/9613388
+
+# Python @staticmethod@classmethod用法
+https://blog.csdn.net/sinat_34079973/article/details/53502348
