@@ -148,3 +148,10 @@ https://blog.csdn.net/sinat_34079973/article/details/53502348
 
 # python 代码搜索
 https://www.programcreek.com/python/
+
+// 删除本地标签
+git tag -l|awk '/v0\.3\.[0-9]{0,}$/'|xargs git tag -d
+// 删除远程标签
+git show-ref --tag|awk '/v0\.[0-6]{1}\.[0-9]{0,}$/ {print ":" $2}'|xargs git push origin
+// gmake,gawk 在ubuntu 下 not found
+https://blog.csdn.net/u013968786/article/details/51063869
