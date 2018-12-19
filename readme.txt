@@ -145,3 +145,6 @@ https://stackoverrun.com/cn/q/9613388
 
 # Python @staticmethod@classmethod用法
 https://blog.csdn.net/sinat_34079973/article/details/53502348
+
+# python 代码搜索
+https://www.programcreek.com/python/
