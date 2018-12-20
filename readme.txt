@@ -160,3 +160,6 @@ https://blog.csdn.net/u013968786/article/details/51063869
 https://www.cnblogs.com/one-lightyear/p/6814833.html
 # 关于Python中正则使用findall和分组的一个坑
 https://blog.csdn.net/tennysonsky/article/details/80101541
+
+# 最全Pycharm教程（3）——代码的调试、运行
+https://blog.csdn.net/u013088062/article/details/50130991
