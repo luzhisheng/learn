@@ -155,3 +155,6 @@ git tag -l|awk '/v0\.3\.[0-9]{0,}$/'|xargs git tag -d
 git show-ref --tag|awk '/v0\.[0-6]{1}\.[0-9]{0,}$/ {print ":" $2}'|xargs git push origin
 // gmake,gawk 在ubuntu 下 not found
 https://blog.csdn.net/u013968786/article/details/51063869
+
+# python re模块findall()详解
+https://www.cnblogs.com/one-lightyear/p/6814833.html

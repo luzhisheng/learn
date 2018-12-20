@@ -4,7 +4,7 @@ import youtube_dl
 def download(youtube_url):
     # 定义某些下载参数
     ydl_opts = {
-        'format': '137+m4a',
+        'format': '133+m4a',
         'outtmpl': '%(id)s%(ext)s'
     }
 
@@ -13,4 +13,4 @@ def download(youtube_url):
 
 
 if __name__ == '__main__':
-    download('https://www.youtube.com/watch?v=BWsqWNpr2hs')
+    download('https://www.youtube.com/watch?v=cQgn9TYeejs')
