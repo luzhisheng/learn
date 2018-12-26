@@ -163,3 +163,8 @@ https://blog.csdn.net/tennysonsky/article/details/80101541
 
 # 最全Pycharm教程（3）——代码的调试、运行
 https://blog.csdn.net/u013088062/article/details/50130991
+
+# 每蜘蛛的设置
+https://doc.scrapy.org/en/latest/topics/settings.html?highlight=custom_setting
+# Scrapy1.2.0禁止重定向的解决方法
+https://www.zhaokeli.com/article/8046.html
