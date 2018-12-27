@@ -168,3 +168,6 @@ https://blog.csdn.net/u013088062/article/details/50130991
 https://doc.scrapy.org/en/latest/topics/settings.html?highlight=custom_setting
 # Scrapy1.2.0禁止重定向的解决方法
 https://www.zhaokeli.com/article/8046.html
+
+# 语言代码表
+http://www.lingoes.cn/zh/translator/langcode.htm
