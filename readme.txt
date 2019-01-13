@@ -171,3 +171,6 @@ https://www.zhaokeli.com/article/8046.html
 
 # 语言代码表
 http://www.lingoes.cn/zh/translator/langcode.htm
+
+# Chrome浏览器清除页面js文件缓存的方法
+https://blog.csdn.net/pukuimin1226/article/details/73204609
