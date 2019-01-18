@@ -174,3 +174,7 @@ http://www.lingoes.cn/zh/translator/langcode.htm
 
 # 网址URL中特殊字符转义编码
 http://tool.chinaz.com/tools/urlencode.aspx
+
+# Chrome浏览器清除页面js文件缓存的方法
+https://blog.csdn.net/pukuimin1226/article/details/73204609
+
