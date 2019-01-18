@@ -178,3 +178,5 @@ http://tool.chinaz.com/tools/urlencode.aspx
 # Chrome浏览器清除页面js文件缓存的方法
 https://blog.csdn.net/pukuimin1226/article/details/73204609
 
+# sunstar爬虫破解解析
+https://www.sunstar.com.ph/
