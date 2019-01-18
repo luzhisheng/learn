@@ -171,3 +171,6 @@ https://www.zhaokeli.com/article/8046.html
 
 # 语言代码表
 http://www.lingoes.cn/zh/translator/langcode.htm
+
+# 网址URL中特殊字符转义编码
+http://tool.chinaz.com/tools/urlencode.aspx
