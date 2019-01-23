@@ -45,7 +45,7 @@ def get_language_type(name):
     return 'English'
 
 
-url = 'https://news.abs-cbn.com/business/11/20/18/why-ikea-chose-ph-for-worlds-biggest-store'
-name = 'abs_cbn'
+url = 'https://www.philstar.com/sports/2019/01/21/1886934/horns-promoter-calls-out-pacquiao'
+name = 'philstar'
 a = generate_sign(url, name)
 print(a)
