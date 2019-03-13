@@ -43,6 +43,8 @@ http://www.yujzw.com/csqw/fiddler_windows10.html
 # scrapy
 #domian+dont_filter=True
 #https://www.cnblogs.com/3wtoucan/p/6008693.html
+https://docs.scrapy.org/en/latest/topics/commands.html
+https://scrapy-chs.readthedocs.io/zh_CN/1.0/topics/commands.html
 
 # python mock基本使用
 https://www.cnblogs.com/fnng/p/5648247.html
