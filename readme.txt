@@ -191,3 +191,6 @@ https://www.processon.com/diagrams
 
 # markdown语法
 https://coding.net/help/doc/project/markdown.html#i-6
+
+# eos 视频教程
+https://edu.51cto.com/courselist/256.html
