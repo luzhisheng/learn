@@ -194,3 +194,6 @@ https://coding.net/help/doc/project/markdown.html#i-6
 
 # eos 视频教程
 https://edu.51cto.com/courselist/256.html
+
+# Postman设置网络代理
+https://blog.csdn.net/qq_28284093/article/details/80162842
