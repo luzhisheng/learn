@@ -197,3 +197,9 @@ https://edu.51cto.com/courselist/256.html
 
 # Postman设置网络代理
 https://blog.csdn.net/qq_28284093/article/details/80162842
+
+#ubuntu shadowsocks privoxy shadowsocsR
+https://www.codelast.com/%E5%8E%9F%E5%88%9B-ubuntu%E7%BB%88%E7%AB%AF%E4%BD%BF%E7%94%A8privoxy%E4%BB%A3%E7%90%86/
+https://kinoko3.github.io/2017/10/18/shadowsocsR-privoxy-liunx%E4%B8%8B%E4%BD%BF%E7%94%A8SSR%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/
+http://bmyell.cn/2016/10/22/ubuntu%E8%AE%BE%E7%BD%AEshadowsocks%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/
+https://www.sundabao.com/ubuntu%E4%BD%BF%E7%94%A8shadowsocks/
