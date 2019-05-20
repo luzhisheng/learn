@@ -209,3 +209,6 @@ https://blog.csdn.net/u010383937/article/details/73773903
 
 # 如何在 Chrome 浏览器中截出带手机壳的图
 http://gooogle.how/182.html
+
+# concurrent.futures --- 启动并行任务
+https://docs.python.org/zh-cn/3.7/library/concurrent.futures.html
