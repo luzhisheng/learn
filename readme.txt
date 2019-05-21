@@ -212,3 +212,6 @@ http://gooogle.how/182.html
 
 # concurrent.futures --- 启动并行任务
 https://docs.python.org/zh-cn/3.7/library/concurrent.futures.html
+
+# ubuntu mysqlclient/MYSQL-python安装报错一键修复
+https://blog.cyru1s.com/posts/mysqlclient_MYSQL-python_fix.html
